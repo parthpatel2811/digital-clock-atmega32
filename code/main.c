@@ -18,7 +18,6 @@ volatile int day = 1, month = 1, year = 2024;
 
 const int days_in_month[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-
 void lcd_command(unsigned char);
 void lcd_data(unsigned char);
 void lcd_init();
@@ -29,7 +28,6 @@ void update_date();
 void timer1_init();
 void check_buttons();
 void debounce();
-
 
 void lcd_command(unsigned char cmd) {
 	LCD_PORT = (LCD_PORT & 0x0F) | (cmd & 0xF0);
@@ -165,8 +163,6 @@ void update_date() {
 	_delay_ms(500);
 }
 
-
-
 void check_buttons() {
 	if (!(PINC & (1 << BTN_MINUTES))) {
 		_delay_ms(200);
@@ -209,7 +205,6 @@ void check_buttons() {
 		lcd_print("Set Months   ");
 	}
 }
-
 
 void debounce() {
 	_delay_ms(50);
