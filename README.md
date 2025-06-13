@@ -35,7 +35,7 @@ This project implements a real-time **digital clock** system using the **ATmega3
   - Schematic Diagram
 ![images/digital_clock.png](https://github.com/parthpatel2811/digital-clock-atmega32/blob/04834b7293ad9117a2de959f660ba914df1ef0c7/Schematic%20Diagram)
   - Hardware view
-
+https://github.com/parthpatel2811/digital-clock-atmega32/blob/647bd3d410c541c23928c4a6503394214d58da4e/Hardware%20view
 ## ⚙️ Pin Configuration
 
 | Component           | ATmega32 Pin    |
